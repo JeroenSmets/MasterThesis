@@ -1,0 +1,29 @@
+{
+ "@context": {},
+ "@id": "Objects",
+ "@type":"Entity",
+ "@graph":[
+           {"@id": "Electrical components",
+            "@graph":[
+                {"@id":"Resistor",
+                 "Properties":[{"Number of components":"1"},
+                               {"(Width)x(Length)x(Height)":"(Wr)x(Lr)x(Hr)"},
+                               {"Pin points":"P1 & P2"}                        
+                      									]                   
+                },
+                {"@id":"Capacitor",
+                 "Properties":[{"Number of components":"2"},
+                               {"(Width)x(Length)x(Height)":"(Wc)x(Lc)x(Hc)"},
+                               {"Pin points":"P3 & P4"}                        
+                      									]                   
+                },
+                {"@id":"Coil",
+                 "Properties":[{"Number of components":"2"},
+                               {"(Radius)x(Height)":"(R)x(Hr)"},
+                               {"Pin points":"P5 & P6"}                        
+                      									]                   
+                }           
+                ]
+           } 
+       	  ]
+}
