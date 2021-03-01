@@ -1,0 +1,26 @@
+{
+ "@context": {},
+ "@id": "CrossoverToWorksurface",
+ "@type":"Relation",
+ "Relation properties":[{"@id":"1st order",
+                          "Properties":[{"Position pin point1":"P1"},
+                         				{"Position pin point2":"P2"},
+                         				{"Position pin point3":"P3"}]},
+                         {"@id":"2nd order",
+                          "Properties":[{"Position pin point1":"P1"},
+                         				{"Position pin point2":"P2"},
+                                        {"Position pin point2":"P3"},
+                                        {"Position pin point2":"P4"},
+                         				{"Position pin point3":"P5"}]}
+                      									],
+ "@graph":[
+           {"@id": "Worksurface",
+            "Properties":[{"Width":"Ws"},
+                          {"Height":"Hs"},
+                          {"Reference point":"Ref"}]
+           },
+   		   {"@id": "Crossover",
+            "Properties":[{"Reference point":"Refc"}]
+           } 
+       	  ]
+}
