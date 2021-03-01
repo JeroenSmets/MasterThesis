@@ -1,6 +1,7 @@
 {
  "@context": {},
- "@id": "Crossoverboard Taxonomy",
+ "@id": "Crossoverboard",
+ "@type":"Entity",
  "@graph":[
            {"@id": "Crossover variation",
             "@graph":[
