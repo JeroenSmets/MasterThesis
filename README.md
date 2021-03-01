@@ -10,3 +10,10 @@ Entities:
 •	Crossover board
 
 •	Worksurface
+
+
+Relations:
+
+•	ObjectsToWorksurface
+
+•	CrossoverToWorksurface
