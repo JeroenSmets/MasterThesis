@@ -1,5 +1,4 @@
 {
- "@context": {},
  "@id": "Crossoverboard",
  "@type":"Entity",
  "@graph":[
@@ -8,11 +7,11 @@
                 {"@id":"1st order circuit",
                  "@graph":
                     [
-                      {"@id":"High-pass","Properties":[{"Number of components":"2"},
+                      {"@id":"High-pass","Properties":[{"Number of component outlines":"2"},
                                                        {"Serial":"1 capacitor & 1 resistor"},
                                                        {"Parallel":"Nothing"}                        
                       									]},
-                      {"@id":"Low-pass","Properties":[{"Number of components":"1"},
+                      {"@id":"Low-pass","Properties":[{"Number of component outlines":"1"},
                                                        {"Serial":"1 coil"},
                                                        {"Parallel":"Nothing"}]}
                     ]
@@ -20,11 +19,11 @@
                 {"@id":"2nd order circuit",
                  "@graph":
                     [
-                      {"@id":"High-pass","Properties":[{"Number of components":"3"},
+                      {"@id":"High-pass","Properties":[{"Number of component outlines":"3"},
                                                        {"Serial":"1 capacitor & 1 resistor"},
                                                        {"Parallel":"1 coil"}                        
                       									]},
-                      {"@id":"Low-pass","Properties":[{"Number of components":"2"},
+                      {"@id":"Low-pass","Properties":[{"Number of component outlines":"2"},
                                                        {"Serial":"1 coil"},
                                                        {"Parallel":"1 capacitor"}]}
                     ]
@@ -45,7 +44,7 @@
                                                        {"Parallel":"Nr2"}]}
                     ]
                 },
-                {"@id":"Component outlines",
+                {"@id":"Component outline measures",
                  "@graph":
                  [{"@id":"1st order outlines","Properties":[
                       {"@id":"Resistor","Properties":[{"Width":"Wr"},
