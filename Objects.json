@@ -1,28 +1,34 @@
-{
- "@id": "Objects",
- "@type":"Entity",
- "@graph":[
-           {"@id": "Electrical components",
-            "@graph":[
-                {"@id":"Resistor",
-                 "Properties":[{"Number of components":"1"},
-                               {"(Width)x(Length)x(Height)":"(Wr)x(Lr)x(Hr)"},
-                               {"Pin points":"P1 & P2"}                        
-                      									]                   
-                },
-                {"@id":"Capacitor",
-                 "Properties":[{"Number of components":"2"},
-                               {"(Width)x(Length)x(Height)":"(Wc)x(Lc)x(Hc)"},
-                               {"Pin points":"P3 & P4"}                        
-                      									]                   
-                },
-                {"@id":"Coil",
-                 "Properties":[{"Number of components":"2"},
-                               {"(Radius)x(Height)":"(R)x(Hr)"},
-                               {"Pin points":"P5 & P6"}                        
-                      									]                   
-                }           
-                ]
-           } 
-       	  ]
+{"@context" : {}, 
+ "@id": "Electrical components",
+ "@type" : ["Electrical component", "Crossover part"],
+ "@graph": [
+            { "@id": "Resistor", "@type": [ "Electrical component", "Resistance" ],
+            "Parts" : 
+                   [
+                 { "@id": "Block",
+                   "@type" : ["Resistance text", "White cube", "Fluent1"] },
+                 { "@id": "Pins",
+                   "@type" : ["Two pins","Aluminium wire"] }                
+               ]},
+            { "@id": "Capacitor", "@type": [ "Electrical component", "Capacity" ],
+            "Parts" : 
+                   [
+                 { "@id": "Black cylinder",
+                   "@type" : ["Capacity text", "Black cylinder", "Fluent2"] },
+                 { "@id": "Pins",
+                   "@type" : ["Two pins","Aluminium wire"] }                
+               ]},
+            { "@id": "Coil","@type": [ "Electrical component", "Induction" ],
+            "Parts" : 
+                   [
+                 { "@id": "Cylinder",
+                   "@type" : "Black cylinder" },
+                 { "@id": "Circel cover",
+                   "@type" : ["Induction text", "Black circle", "Fluent3"] },
+                 { "@id": "Copper wire",
+                   "@type" : ["Bronze wire", "Wound up"] },
+                 { "@id": "Pins",
+                   "@type" : ["Two pins","Aluminium wire"] }                
+               ]}    
+		   ]			
 }
