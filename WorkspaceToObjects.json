@@ -1,0 +1,65 @@
+{
+ "@context": {},
+ "@id": "WorkspaceToObjects Relation",
+ "@type": "WorkspaceToObjects Relation",
+ "@graph":[
+   			      {
+              "@id": "Workspace",
+              "@type": ["Workplane","Assembly plane"],
+              "Workplane attributes":[
+                        {
+                          "@id": "Reference Fluent",
+                          "@type": ["Fluent","Perception detection","Point of reference"]
+                        },
+                        {
+                          "@id": "Height Fluent",
+                          "@type": ["Fluent","Perception detection","Height of workplane"]
+                        }
+                       ]
+            			},
+
+   {
+              "@id": "Resistor",
+              "@type": ["Object","Electrical component","Resistor"],
+              "Component attributes":[
+                        {
+                          "@id": "Reference Fluent",
+                          "@type": ["Fluent","Perception detection","Point of reference"]
+                        },
+                        {
+                          "@id": "Orientation Fluent",
+                          "@type": ["Fluent","Perception detection","Orientation of object"]
+                        }               
+                       ]
+              },
+   {
+              "@id": "Capacitor",
+              "@type": ["Object","Electrical component","Capacitor"],
+              "Component attributes":[
+                        {
+                          "@id": "Reference Fluent",
+                          "@type": ["Fluent","Perception detection","Point of reference"]
+                        },
+                        {
+                          "@id": "Orientation Fluent",
+                          "@type": ["Fluent","Perception detection","Orientation of object"]
+                        }               
+                       ]
+              },
+   {
+              "@id": "Coil",
+              "@type": ["Object","Electrical component","Coil"],
+              "Component attributes":[
+                        {
+                          "@id": "Reference Fluent",
+                          "@type": ["Fluent","Perception detection","Point of reference"]
+                        },
+                        {
+                          "@id": "Orientation Fluent",
+                          "@type": ["Fluent","Perception detection","Orientation of object"]
+                        }               
+                       ]
+              }
+          ]
+ 
+}
