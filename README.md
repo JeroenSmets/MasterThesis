@@ -1,6 +1,6 @@
 Situation:
 
-The empty assembly board is placed in the two-dimensional worksurface. The objects (resistance, capacitor, and coil) are arbitrary placed next to the assembly surface. The goal is to place all objects on the right place of the crossover board. For this, we need an appropriate knowledge representation of the objects according to the perception image. Next to that, these components can be related to the workspace in order to represent their positions. 
+The empty assembly board is placed in the two-dimensional worksurface. The objects (resistance, capacitor, and coil) are arbitrary placed next to the assembly surface. The goal is to place all objects on the right place of the crossover board. For this, we need an appropriate knowledge representation of the objects and workspace according to the perception image. Next to that, these components can be related to the workspace in order to represent their positions. 
 
 
 Entities:
