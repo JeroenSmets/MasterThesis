@@ -1,34 +1,68 @@
-{"@context" : {}, 
- "@id": "Electrical components",
- "@type" : ["Electrical component", "Crossover part"],
- "@graph": [
-            { "@id": "Resistor", "@type": [ "Electrical component", "Resistance" ],
-            "Parts" : 
-                   [
-                 { "@id": "Block",
-                   "@type" : ["Resistance text", "White cube", "Fluent1"] },
-                 { "@id": "Pins",
-                   "@type" : ["Two pins","Aluminium wire"] }                
-               ]},
-            { "@id": "Capacitor", "@type": [ "Electrical component", "Capacity" ],
-            "Parts" : 
-                   [
-                 { "@id": "Black cylinder",
-                   "@type" : ["Capacity text", "Black cylinder", "Fluent2"] },
-                 { "@id": "Pins",
-                   "@type" : ["Two pins","Aluminium wire"] }                
-               ]},
-            { "@id": "Coil","@type": [ "Electrical component", "Induction" ],
-            "Parts" : 
-                   [
-                 { "@id": "Cylinder",
-                   "@type" : "Black cylinder" },
-                 { "@id": "Circel cover",
-                   "@type" : ["Induction text", "Black circle", "Fluent3"] },
-                 { "@id": "Copper wire",
-                   "@type" : ["Bronze wire", "Wound up"] },
-                 { "@id": "Pins",
-                   "@type" : ["Two pins","Aluminium wire"] }                
-               ]}    
-		   ]			
+{
+ "@context": {},
+ "@id": "VisionToObjects Relation",
+ "@type": "ImageToObjects Relation",
+ "@graph":[
+   			      {
+              "@id": "Camera Image",
+              "@type": "Image",
+              "Detection attributes":[
+                        {
+                          "@id": "Colour Fluent",
+                          "@type": ["Fluent","Perception detection","Colour of object"]
+                        },
+                        {
+                          "@id": "Shape Fluent",
+                          "@type": ["Fluent","Perception detection","Shape of object"]
+                        },
+                        {
+                          "@id": "Orientation Fluent",
+                          "@type": ["Fluent","Peception detection","Orientation of object"]
+                        }               
+                       ]
+            			},
+   			      {
+              "@id": "Resistor",
+              "@type": ["Object","Electrical component","Resistor"],
+              "Component attributes":[
+                        {
+                          "@id": "Colour",
+                          "@type": ["White colour","Black text","Silvery gray pins"]
+                        },
+                        {
+                          "@id": "Shape",
+                          "@type": ["Cube","Pins"]
+                        }               
+                       ]
+              },
+   {
+              "@id": "Capacitor",
+              "@type": ["Object","Electrical component","Capacitor"],
+              "Component attributes":[
+                        {
+                          "@id": "Colour",
+                          "@type": ["Black colour","Gold text","Silvery gray pins"]
+                        },
+                        {
+                          "@id": "Shape",
+                          "@type": ["Cube or cylinder","Pins"]
+                        }               
+                       ]
+              },
+   {
+              "@id": "Coil",
+              "@type": ["Object","Electrical component","Coil"],
+              "Component attributes":[
+                        {
+                          "@id": "Colour",
+                          "@type": ["Bronze colour","Blue text","Black case","Silvery gray pins"]
+                        },
+                        {
+                          "@id": "Shape",
+                          "@type": ["Cylinder","Disks","Pins"]
+                        }               
+                       ]
+              }
+          ]
+ 
 }
