@@ -18,7 +18,11 @@
                         {
                           "@id": "Orientation Fluent",
                           "@type": ["Fluent","Peception detection","Orientation of object"]
-                        }               
+                        },
+                        {
+                          "@id": "Pose Fluent",
+                          "@type": ["Fluent","Peception detection","Position of object"]
+                        }
                        ]
             			},
    			      {
