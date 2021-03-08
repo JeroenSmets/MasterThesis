@@ -16,3 +16,5 @@ Relations:
 •	VisionToObjects
 
 •	VisionToWorkspace
+
+•	WorkspaceToObjects
