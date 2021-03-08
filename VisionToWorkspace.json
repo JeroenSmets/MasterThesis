@@ -1,0 +1,40 @@
+{
+ "@context": {},
+ "@id": "VisionToWorkspace Relation",
+ "@type": "ImageToWorkspace Relation",
+ "@graph":[
+   			      {
+              "@id": "Camera Image",
+              "@type": "Image",
+              "Detection attributes":[
+                        {
+                          "@id": "Frame Fluent",
+                          "@type": ["Fluent","Perception detection","Frame of image"]
+                        },
+                        {
+                          "@id": "Height Fluent",
+                          "@type": ["Fluent","Perception detection","Height of workplane"]
+                        },
+                		{
+                          "@id": "Reference Fluent",
+                          "@type": ["Fluent","Perception detection","Point of reference"]
+                        }
+                       ]
+            	},
+              {
+              "@id": "Workspace",
+              "@type": ["Workplane","Assembly plane"],
+              "Workplane attributes":[
+                        {
+                          "@id": "Height plane",
+                          "@type": "Height"
+                        },
+                        {
+                          "@id": "Area",
+                          "@type": "Area"
+                        }               
+                       ]
+              }
+          ]
+ 
+}
