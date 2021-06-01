@@ -1,23 +1,23 @@
 {
  "@context": {},
  "@id": "Camera",
- "@type": ["Image"],
+ "@type": ["Image","Shape","Area"],
  "":[
 {
               "@id": "SensorData",
-              "@type": ["ProcessedImage"],
+              "@type": ["ProcessedImage","Shape","Area"],
   			  "":[
                       {
                     "@id": "HOGfeature",
-                    "@type": ["GradientImage"],
+                    "@type": ["GradientImage","Shape","Area","Gradientfunction"],
                     "":[
                               {
                             "@id": "CapacitorHOGfeature",
-                            "@type": ["RectangularPatch"],
+                            "@type": ["RectangularPatch","Shape","Area"],
                             "":[
                                      {
                                     "@id": "CapacitorTexture",
-                                    "@type": ["TexturePatch"],
+                                    "@type": ["TexturePatch","Area"],
                                     "":[
                                             {
                                           "@id": "Capacitor",
@@ -32,15 +32,15 @@
                       },
                       {
                     "@id": "ConvolutionGrid",
-                    "@type": ["ConvolutionGrid"],
+                    "@type": ["ConvolutionGrid","Shape","Area","Correlationfunction"],
                     "":[
                       			{
                             "@id": "ResistorTemplatefunction",
-                            "@type": ["RectangularPatch"],
+                            "@type": ["RectangularPatch","Shape","Area","EdgeEquations, AvgIntensities"],
                             "":[
                                      {
                                     "@id": "ResistorTexture",
-                                    "@type": ["TexturePatch"],
+                                    "@type": ["TexturePatch","Area"],
                                     "":[
                                             {
                                           "@id": "Resistor",
@@ -53,11 +53,11 @@
                               },
                       			{
                             "@id": "CoilTemplatefunction",
-                            "@type": ["CircularPatch"],
+                            "@type": ["CircularPatch","Shape","Area","EdgeEquations, AvgIntensities"],
                             "":[
                                      {
                                     "@id": "CoilTexture",
-                                    "@type": ["TexturePatch"],
+                                    "@type": ["TexturePatch","Area"],
                                     "":[
                                             {
                                           "@id": "Coil",
