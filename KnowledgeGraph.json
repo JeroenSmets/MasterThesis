@@ -1,0 +1,79 @@
+{
+ "@context": {},
+ "@id": "Camera",
+ "@type": ["Image"],
+ "":[
+{
+              "@id": "SensorData",
+              "@type": ["ProcessedImage"],
+  			  "":[
+                      {
+                    "@id": "HOGfeature",
+                    "@type": ["GradientImage"],
+                    "":[
+                              {
+                            "@id": "CapacitorHOGfeature",
+                            "@type": ["RectangularPatch"],
+                            "":[
+                                     {
+                                    "@id": "CapacitorTexture",
+                                    "@type": ["TexturePatch"],
+                                    "":[
+                                            {
+                                          "@id": "Capacitor",
+                                          "@type": ["Object"]
+                                            }
+
+                                        ]
+                                      }  
+                            	]
+                              }              
+                    	]
+                      },
+                      {
+                    "@id": "ConvolutionGrid",
+                    "@type": ["ConvolutionGrid"],
+                    "":[
+                      			{
+                            "@id": "ResistorTemplatefunction",
+                            "@type": ["RectangularPatch"],
+                            "":[
+                                     {
+                                    "@id": "ResistorTexture",
+                                    "@type": ["TexturePatch"],
+                                    "":[
+                                            {
+                                          "@id": "Resistor",
+                                          "@type": ["Object"]
+                                            }
+
+                                        ]
+                                      }  
+                            	]
+                              },
+                      			{
+                            "@id": "CoilTemplatefunction",
+                            "@type": ["CircularPatch"],
+                            "":[
+                                     {
+                                    "@id": "CoilTexture",
+                                    "@type": ["TexturePatch"],
+                                    "":[
+                                            {
+                                          "@id": "Coil",
+                                          "@type": ["Object"]
+                                            }
+
+                                        ]
+                                      }  
+                            	]
+                              }
+                      
+                    ]
+                      }
+                
+              	]
+          }
+        ]
+ 
+}
