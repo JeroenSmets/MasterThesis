@@ -17,7 +17,7 @@
                             "":[
                                      {
                                     "@id": "CapacitorTexture",
-                                    "@type": ["TexturePatch","Area"],
+                                    "@type": ["TexturePatch","Width","Height","RefPoint"],
                                     "":[
                                             {
                                           "@id": "Capacitor",
@@ -40,7 +40,7 @@
                             "":[
                                      {
                                     "@id": "ResistorTexture",
-                                    "@type": ["TexturePatch","Area"],
+                                    "@type": ["TexturePatch","Width","Height","RefPoint"],
                                     "":[
                                             {
                                           "@id": "Resistor",
@@ -57,7 +57,7 @@
                             "":[
                                      {
                                     "@id": "CoilTexture",
-                                    "@type": ["TexturePatch","Area"],
+                                    "@type": ["TexturePatch","InnerRadius","OuterRadius","RefPoint"],
                                     "":[
                                             {
                                           "@id": "Coil",
