@@ -23,7 +23,6 @@
                                           "@id": "Capacitor",
                                           "@type": ["Object"]
                                             }
-
                                         ]
                                       }  
                             	]
@@ -46,7 +45,6 @@
                                           "@id": "Resistor",
                                           "@type": ["Object"]
                                             }
-
                                         ]
                                       }  
                             	]
@@ -63,17 +61,13 @@
                                           "@id": "Coil",
                                           "@type": ["Object"]
                                             }
-
                                         ]
                                       }  
                             	]
-                              }
-                      
+                              }                      
                     ]
-                      }
-                
+                      }                
               	]
           }
-        ]
- 
+        ] 
 }
